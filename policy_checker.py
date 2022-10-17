@@ -65,8 +65,6 @@ def check_policy_compliant(password):
             digit = True
         elif policies["chars"] and chr in punctuation:
             chars = True
-        else:
-            return False
 
     if (policies["lower"] and not lower):
         return False
