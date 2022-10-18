@@ -49,7 +49,7 @@ def check_policies_enabled(policy_template):
 check if some string is a password policy compliant
 """
 def check_policy_compliant(password):
-    if (len(password) != policies["length"]): return False
+    if (len(password) < policies["length"]): return False
 
     lower = False
     upper = False
@@ -111,7 +111,13 @@ def parse_passwords(fline):
     
     if not check_policy_compliant(password): return
 
-    print(password)
+    save_to_file(password)
+
+
+def save_to_file(data_line):
+    with open("policy_compliant.txt", "at") as fh:
+        fh.write(data_line + "\n")
+        fh.close()
 
 
 def usage():
