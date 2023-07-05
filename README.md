@@ -4,9 +4,9 @@ The Password Policy Checker is a Python script that checks for passwords complia
 
 # Usage
 
-    python3 policy_checker.py [policy_template] [length] [passwords_file]
+``python3 policy_checker.py [policy_template] [length] [passwords_file]
 
-``policy_template - The policy template for the password.
+policy_template - The policy template for the password.
 length - The minimum length of the password.
 passwords_file - The path to the file containing the list of passwords.``
 
