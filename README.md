@@ -23,6 +23,7 @@ This will check for passwords that are at least 20 characters long, contain uppe
 # Dependencies
 
 The script requires Python 3.x to run. No additional libraries or modules are required.
-License
+
+# License
 
 This script is licensed under the MIT License. See the LICENSE file for details.
