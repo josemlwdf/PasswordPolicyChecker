@@ -14,9 +14,11 @@ The script will print every password that meets the policy requirements and save
 
 # Example
 
-    python3 policy_checker.py Teaaaaaaaaaaaaaaaa@1 20 /usr/share/wordlists/rockyou.txt
+    python3 policy_checker.py Teaaaaaaaaaaaaaaaa@1 /usr/share/wordlists/rockyou.txt
 
 This will check for passwords that are at least 20 characters long, contain upper and lowercase characters, digits, and special characters, and are stored in the /usr/share/wordlists/rockyou.txt file. The results will be saved in policy_compliant.txt.
+
+![image](https://github.com/user-attachments/assets/d67a4529-875e-4c65-a2b0-18140fdf49fa)
 
 # Dependencies
 
